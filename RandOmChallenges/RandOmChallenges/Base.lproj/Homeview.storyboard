@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Te4-Te-Tnw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="ADq-5D-FRG">
+            <objects>
+                <viewController title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KyF-b1-1lu" customClass="HomeViewController" customModule="RandOmChallenges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VND-e2-P9n"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pz7-dw-2sy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E5v-8R-Fc2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-W8-H6a">
+                                <rect key="frame" x="124" y="316" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1853871694" green="0.22989358479999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Challenge">
+                                    <color key="titleColor" red="1" green="0.228756348" blue="0.97035104159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengeButtonTapped:" destination="KyF-b1-1lu" eventType="touchUpInside" id="GgJ-YA-5IE"/>
+                                    <segue destination="V4t-kI-3DZ" kind="show" identifier="SelectAge" id="QaW-id-vGm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHz-Zd-FWT">
+                                <rect key="frame" x="124" y="385" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Awards/Gallery">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="achievementButtonTapped:" destination="KyF-b1-1lu" eventType="touchUpInside" id="cpR-Ui-C7e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-8q-ou6">
+                                <rect key="frame" x="124" y="464" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95024818185491955" green="1" blue="0.34780383461022468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Add More!">
+                                    <color key="titleColor" red="0.30064561631944442" green="0.64473681406444538" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="KyF-b1-1lu" eventType="touchUpInside" id="THe-lK-if9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-F1-kr8">
+                                <rect key="frame" x="124" y="539" width="126" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.027066148477157381" green="0.01672366823354653" blue="0.002999221473598373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Bonus Challenges">
+                                    <color key="titleColor" red="1" green="0.2720009209" blue="0.23639450510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bonusButtonTapped:" destination="KyF-b1-1lu" eventType="touchUpInside" id="d0f-wU-gl5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-92-AAq">
+                                <rect key="frame" x="50" y="50" width="275" height="167"/>
+                                <color key="backgroundColor" red="1" green="0.61134607269999997" blue="0.1037919843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="DCO-OH-jCB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Random Challenge">
+                                        <attributes>
+                                            <font key="NSFont" size="70" name="SignPainter-HouseScriptSemibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.10386923139354515" green="0.22531887616493249" blue="0.97680455446243286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJR-qS-kvS" userLabel="settings">
+                                <rect key="frame" x="0.0" y="16" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="igW-hT-iQq"/>
+                                    <constraint firstAttribute="width" constant="30" id="yEP-Jn-HEs"/>
+                                </constraints>
+                                <state key="normal" image="settings"/>
+                                <connections>
+                                    <action selector="settingsButtonTapped:" destination="KyF-b1-1lu" eventType="touchUpInside" id="xPF-1G-jHm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18848791776822049" green="1" blue="0.63638463387861566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NJR-qS-kvS" firstAttribute="leading" secondItem="E5v-8R-Fc2" secondAttribute="leading" id="2ob-DI-jUj"/>
+                            <constraint firstItem="wiS-92-AAq" firstAttribute="top" secondItem="E5v-8R-Fc2" secondAttribute="top" constant="50" id="IvB-Bq-4Ol"/>
+                            <constraint firstAttribute="bottom" secondItem="wiS-92-AAq" secondAttribute="bottom" constant="450" id="OKW-1O-GZD"/>
+                            <constraint firstAttribute="trailing" secondItem="wiS-92-AAq" secondAttribute="trailing" constant="50" id="X47-yJ-npU"/>
+                            <constraint firstItem="wiS-92-AAq" firstAttribute="leading" secondItem="E5v-8R-Fc2" secondAttribute="leading" constant="50" id="Xne-bN-Kpo"/>
+                            <constraint firstItem="NJR-qS-kvS" firstAttribute="top" secondItem="E5v-8R-Fc2" secondAttribute="top" constant="16" id="g3o-xN-3CH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fHr-iR-af4"/>
+                    <connections>
+                        <outlet property="achievementButton" destination="qHz-Zd-FWT" id="t9I-zq-ynT"/>
+                        <outlet property="addButton" destination="ogC-8q-ou6" id="5fm-hy-7zq"/>
+                        <outlet property="bonusButton" destination="e2w-F1-kr8" id="x4Y-dM-ixd"/>
+                        <outlet property="challengeButton" destination="fBs-W8-H6a" id="wFG-13-ywG"/>
+                        <outlet property="settingsButton" destination="NJR-qS-kvS" id="Qbh-yO-nx6"/>
+                        <outlet property="titleLabel" destination="wiS-92-AAq" id="UmO-HS-HIz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPa-Oa-AMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039.2" y="149.77511244377811"/>
+        </scene>
+        <!--Select Age Group-->
+        <scene sceneID="Ua3-TY-BtN">
+            <objects>
+                <viewController id="fij-wX-Iaf" customClass="AgeGroupController" customModule="RandOmChallenges" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DVQ-Zl-2p3"/>
+                        <viewControllerLayoutGuide type="bottom" id="7oF-f3-NDC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eTg-Xh-pHL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-P2-iEO">
+                                <rect key="frame" x="164" y="121" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <state key="normal" title="Kids 1-15">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="kidButtonTapped:" destination="fij-wX-Iaf" eventType="touchUpInside" id="YXe-zN-Pii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp0-WP-vei">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <state key="normal" title="Adults/Teens">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="adultButtonTapped:" destination="fij-wX-Iaf" eventType="touchUpInside" id="bAC-D5-O1l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zum-UG-EDl">
+                                <rect key="frame" x="164" y="508" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <state key="normal" title="All Ages">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="allButtonTapped:" destination="fij-wX-Iaf" eventType="touchUpInside" id="BXi-0L-5yh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Age Group" id="8Ox-2f-h60">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kPX-rK-0so">
+                            <connections>
+                                <action selector="unwindToHome:" destination="fij-wX-Iaf" id="VQa-nP-Wcc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adultButton" destination="Lp0-WP-vei" id="hvB-r8-dpp"/>
+                        <outlet property="allButton" destination="zum-UG-EDl" id="QrT-Bd-bU7"/>
+                        <outlet property="kidButton" destination="aAs-P2-iEO" id="KKr-oh-ATt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jd-9N-poA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3786.4000000000001" y="149.77511244377811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vmy-bw-Bfs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V4t-kI-3DZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kfx-QD-gkt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fij-wX-Iaf" kind="relationship" relationship="rootViewController" id="3OV-GP-2tQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5f-2D-Vim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2847.1999999999998" y="149.77511244377811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IHT-Gs-3se">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Te4-Te-Tnw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="DC9-Rz-NnL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KyF-b1-1lu" kind="relationship" relationship="rootViewController" id="OQW-w1-jpw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZC-Z1-Fu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="64" height="64"/>
+    </resources>
+</document>
